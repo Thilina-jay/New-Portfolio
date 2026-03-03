@@ -528,6 +528,8 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 60px 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-badge {
@@ -644,6 +646,14 @@ ul {
   align-items: flex-start;
 }
 
+/* number + suffix sit on the same row, vertically aligned */
+.stat-number-row {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  line-height: 1;
+}
+
 .stat-num {
   font-size: 2.2rem;
   font-weight: 900;
@@ -655,8 +665,9 @@ ul {
 }
 
 .stat-suffix {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 900;
+  line-height: 1;
   background: var(--grad-primary);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -669,7 +680,7 @@ ul {
   font-weight: 500;
   letter-spacing: .06em;
   text-transform: uppercase;
-  margin-top: 4px;
+  margin-top: 6px;
 }
 
 .stat-divider {
@@ -679,10 +690,6 @@ ul {
 }
 
 .hero-scroll-indicator {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -693,6 +700,11 @@ ul {
   text-transform: uppercase;
   z-index: 2;
   animation: fade-in-up 1s 1s ease both;
+  /* Sits in normal flow inside hero-content, centred */
+  margin-top: 48px;
+  align-self: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .scroll-mouse {
@@ -872,6 +884,36 @@ ul {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+}
+
+/* Address / DOB detail row under highlights */
+.about-detail-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+  padding: 16px 20px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+}
+
+.about-detail-item {
+  display: flex;
+  gap: 12px;
+  font-size: .88rem;
+  color: var(--text-secondary);
+  align-items: baseline;
+}
+
+.about-detail-label {
+  font-weight: 700;
+  color: var(--text-muted);
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  min-width: 120px;
+  flex-shrink: 0;
 }
 
 /* ── 10. SKILLS ───────────────────────────────────────── */
