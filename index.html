@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Thilina Jayaweera – Networking Undergraduate at University of Kelaniya. Specializing in Network Engineering, Cybersecurity, Python & Digital Marketing." />
+    <meta name="keywords"
+        content="Thilina Jayaweera, BICT, University of Kelaniya, CCNA, Networking, Cybersecurity, Python, Portfolio" />
+    <meta property="og:title" content="Thilina Jayaweera | Portfolio" />
+    <meta property="og:description"
+        content="Networking Undergraduate | CCNA | Python | Graphic Designer | Digital Marketer" />
+    <title>Thilina Jayaweera | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- ── NAVBAR ── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>TJ<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon sun-icon">☀️</span>
+                    <span class="theme-icon moon-icon">🌙</span>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="images/hero_background.png" alt="Hero background" class="hero-bg-img" />
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <canvas class="particles-canvas" id="particlesCanvas"></canvas>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Open to Opportunities
+            </div>
+
+            <h1 class="hero-title">
+                <span class="hero-greeting">Hi, I'm</span>
+                <span class="hero-name gradient-text">Thilina Jayaweera</span>
+                <span class="hero-role">Networking Undergraduate</span>
+                <span class="hero-role-sub">CCNA · Python · Graphic Design · Digital Marketing</span>
+            </h1>
+
+            <p class="hero-desc">
+                Aspiring <strong>BICT student</strong> at the University of Kelaniya specialising in
+                <strong>Network Engineering</strong>. Proficient in router/switch configuration and Cisco IOS CLI.
+                Exploring cybersecurity, Python automation, and digital innovation.
+            </p>
+
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary" id="heroViewWork">
+                    <span>View My Projects</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-ghost" id="heroContact">Let's Connect</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-num" data-target="3">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="4">0</span><span class="stat-suffix"></span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="3">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Uni</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll down</span>
+        </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">A Passionate <span class="gradient-text">Tech Enthusiast</span></h2>
+                <p class="section-subtitle">Networking, Security, Design & Marketing — all under one roof</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal">
+                    <div class="about-image-card">
+                        <img src="images/profile_real.jpg" alt="Thilina Jayaweera" class="about-avatar" />
+                        <div class="about-image-glow"></div>
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="exp-num">UOK</span>
+                        <span class="exp-text">University of<br />Kelaniya</span>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+                    <h3 class="about-heading">Building tomorrow's networks,<br />today.</h3>
+                    <p class="about-text">
+                        Aspiring BICT student at the University of Kelaniya specializing in network engineering.
+                        Proficient in router/switch configuration and Cisco IOS CLI. Currently studying CCNA
+                        with a focus on Networking, Switching, Routing, Wireless, Security, and Automation.
+                    </p>
+                    <p class="about-text">
+                        Skilled in social media advertising and digital marketing. Dedicated to leveraging
+                        technology for problem-solving and business growth. Also passionate about graphic design
+                        and vector arts.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🌐</div>
+                            <div>
+                                <strong>Network Engineering</strong>
+                                <p>CCNA certified: Routing, Switching, Wireless & Security</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🔒</div>
+                            <div>
+                                <strong>Cybersecurity</strong>
+                                <p>Ethical hacking with Kali Linux, penetration testing</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <div class="highlight-icon">🎨</div>
+                            <div>
+                                <strong>Graphic Design & Marketing</strong>
+                                <p>Vector arts, visual content & Meta-certified social media advertising</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary" id="aboutContact">Get In Touch</a>
+                        <a href="mailto:thilinajayaweera2000@gmail.com" class="btn btn-outline" id="downloadCV">Email
+                            Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">My <span class="gradient-text">Expertise</span></h2>
+                <p class="section-subtitle">Technologies I work with and the knowledge I've built</p>
+            </div>
+
+            <div class="skills-categories reveal">
+
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🌐</span>
+                        <h3>Networking</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-pill" data-level="85">
+                            <span class="skill-name">CCNA – Switching & Routing</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="80">
+                            <span class="skill-name">Cisco IOS CLI</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="78">
+                            <span class="skill-name">Wireless & Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="75">
+                            <span class="skill-name">Network Automation</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🔒</span>
+                        <h3>Cybersecurity</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-pill" data-level="72">
+                            <span class="skill-name">Kali Linux</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:72%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="68">
+                            <span class="skill-name">Ethical Hacking</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:68%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="70">
+                            <span class="skill-name">Penetration Testing</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="75">
+                            <span class="skill-name">Network Security</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">💻</span>
+                        <h3>Programming & Tech</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-pill" data-level="75">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="80">
+                            <span class="skill-name">Computer Hardware</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="65">
+                            <span class="skill-name">AI / Chatbot Dev</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="70">
+                            <span class="skill-name">ICT Fundamentals</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <span class="skill-cat-icon">🎨</span>
+                        <h3>Design & Marketing</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-pill" data-level="85">
+                            <span class="skill-name">Graphic Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="80">
+                            <span class="skill-name">Vector Arts</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="82">
+                            <span class="skill-name">Social Media Advertising</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-pill" data-level="78">
+                            <span class="skill-name">Digital Marketing</span>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--level:78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tech-tags reveal">
+                <span class="tech-tag">CCNA</span>
+                <span class="tech-tag">Cisco IOS</span>
+                <span class="tech-tag">Kali Linux</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">VLAN</span>
+                <span class="tech-tag">Switching</span>
+                <span class="tech-tag">Routing</span>
+                <span class="tech-tag">Wireless</span>
+                <span class="tech-tag">Network Security</span>
+                <span class="tech-tag">Metasploit</span>
+                <span class="tech-tag">Graphic Design</span>
+                <span class="tech-tag">Vector Arts</span>
+                <span class="tech-tag">Meta Ads</span>
+                <span class="tech-tag">Digital Marketing</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Hands-on work in networking, security & development</p>
+            </div>
+
+            <div class="projects-filter reveal">
+                <button class="filter-btn active" data-filter="all" id="filterAll">All</button>
+                <button class="filter-btn" data-filter="security" id="filterSec">Cybersecurity</button>
+                <button class="filter-btn" data-filter="network" id="filterNet">Networking</button>
+                <button class="filter-btn" data-filter="dev" id="filterDev">Development</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+
+                <!-- Project 1: Hacking Windows 7 -->
+                <article class="project-card reveal" data-category="security" id="projectKali">
+                    <div class="project-img-wrapper">
+                        <img src="images/project_kali.png" alt="Hacking Windows 7 with Kali Linux"
+                            class="project-img" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://www.linkedin.com/posts/thilina-jayaweera-a68b0a239_cybersecurity-ethicalhacking-dataprotection-activity-7204170248587993088-Kqrb"
+                                    target="_blank" rel="noopener" class="project-link-btn" id="projKaliLinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
+                                        <polyline points="15 3 21 3 21 9" />
+                                        <line x1="10" y1="14" x2="21" y2="3" />
+                                    </svg>
+                                    View on LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Cybersecurity</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-cat">Ethical Hacking</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">Hacking Windows 7</h3>
+                        <p class="project-desc">Demonstrating system penetration on a Windows 7 target using Kali Linux
+                            and Metasploit — an ethical hacking & cybersecurity awareness project showcasing real-world
+                            vulnerabilities.</p>
+                        <div class="project-stack">
+                            <span class="stack-tag">Kali Linux</span>
+                            <span class="stack-tag">Metasploit</span>
+                            <span class="stack-tag">Penetration Testing</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Python AI Chatbot -->
+                <article class="project-card reveal project-featured" data-category="dev" id="projectChatbot">
+                    <div class="project-img-wrapper">
+                        <img src="images/project_three.png" alt="Python AI Chatbot" class="project-img" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Thilina-jay/Python-AI-Chat-Bot.git" target="_blank"
+                                    rel="noopener" class="project-link-btn" id="projChatGH">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                                    </svg>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-badge">Featured</div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-cat">AI Development</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h3 class="project-title">AI Python Chat Bot</h3>
+                        <p class="project-desc">A sophisticated conversational AI bot crafted using Python — leveraging
+                            natural language processing to deliver intelligent, context-aware responses in real time.
+                        </p>
+                        <div class="project-stack">
+                            <span class="stack-tag">Python</span>
+                            <span class="stack-tag">NLP</span>
+                            <span class="stack-tag">AI</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: VLAN -->
+                <article class="project-card reveal" data-category="network" id="projectVLAN">
+                    <div class="project-img-wrapper">
+                        <img src="images/project_one.png" alt="VLAN Routing and Trunking" class="project-img" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link-btn" id="projVlanDetail">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                    </svg>
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-cat">Networking</span>
+                            <span class="project-year">2023</span>
+                        </div>
+                        <h3 class="project-title">VLAN Routing & Trunking</h3>
+                        <p class="project-desc">Designed and implemented Virtual LANs for a multi-floor office
+                            infrastructure — segmenting traffic, configuring inter-VLAN routing, and setting up 802.1Q
+                            trunking on Cisco switches.</p>
+                        <div class="project-stack">
+                            <span class="stack-tag">Cisco IOS</span>
+                            <span class="stack-tag">VLAN</span>
+                            <span class="stack-tag">802.1Q Trunk</span>
+                            <span class="stack-tag">Inter-VLAN Routing</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="projects-cta reveal">
+                <a href="https://github.com/Thilina-jay" target="_blank" rel="noopener" class="btn btn-outline"
+                    id="viewAllProjects">View GitHub Profile →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── EXPERIENCE & EDUCATION ── -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Journey</span>
+                <h2 class="section-title">Experience &amp; <span class="gradient-text">Education</span></h2>
+                <p class="section-subtitle">My academic path and hands-on roles</p>
+            </div>
+
+            <div class="timeline-grid reveal">
+
+                <!-- Work Experience Column -->
+                <div class="timeline-col">
+                    <h3 class="timeline-col-title">
+                        <span class="col-icon">💼</span> Work Experience
+                    </h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <div class="tl-header">
+                                    <div>
+                                        <h4 class="tl-role">Social Media Manager</h4>
+                                        <span class="tl-org">Legion Society UOK · University of Kelaniya</span>
+                                    </div>
+                                    <span class="tl-date">2021 – Present</span>
+                                </div>
+                                <p class="tl-desc">
+                                    Leads a dedicated team focused on Social Media Advertising — creating campaigns,
+                                    growing engagement, and building the society's brand presence across platforms.
+                                </p>
+                                <div class="tl-tags">
+                                    <span>Social Media</span>
+                                    <span>Team Lead</span>
+                                    <span>Meta Ads</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-card">
+                                <div class="tl-header">
+                                    <div>
+                                        <h4 class="tl-role">Graphic Designer</h4>
+                                        <span class="tl-org">Legion Society · University of Kelaniya</span>
+                                    </div>
+                                    <span class="tl-date">2021 – Present</span>
+                                </div>
+                                <p class="tl-desc">
+                                    Responsible for creating high-impact visual content — posters, banners, social
+                                    media graphics, and vector illustrations for the society's events and campaigns.
+                                </p>
+                                <div class="tl-tags">
+                                    <span>Graphic Design</span>
+                                    <span>Vector Arts</span>
+                                    <span>Visual Content</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Column -->
+                <div class="timeline-col">
+                    <h3 class="timeline-col-title">
+                        <span class="col-icon">🎓</span> Education
+                    </h3>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot tl-dot-edu"></div>
+                            <div class="timeline-card">
+                                <div class="tl-header">
+                                    <div>
+                                        <h4 class="tl-role">BICT (Hons)</h4>
+                                        <span class="tl-org">University of Kelaniya</span>
+                                    </div>
+                                    <span class="tl-date">2021 – Present</span>
+                                </div>
+                                <p class="tl-desc">
+                                    Bachelor of Information and Communication Technology Honours — specialising in
+                                    Network Engineering, Cybersecurity, and Software Development.
+                                </p>
+                                <div class="tl-tags">
+                                    <span>Networking</span>
+                                    <span>ICT</span>
+                                    <span>Security</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot tl-dot-edu"></div>
+                            <div class="timeline-card">
+                                <div class="tl-header">
+                                    <div>
+                                        <h4 class="tl-role">Secondary Education</h4>
+                                        <span class="tl-org">Maliyadeva Model School, Kurunegala</span>
+                                    </div>
+                                    <span class="tl-date">2017 – 2020</span>
+                                </div>
+                                <p class="tl-desc">
+                                    Completed secondary education with a focus on Technology stream subjects,
+                                    building a strong foundation in science and information technology.
+                                </p>
+                                <div class="tl-tags">
+                                    <span>Technology</span>
+                                    <span>Science</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Certifications -->
+            <div class="certs-section reveal">
+                <h3 class="certs-title">
+                    <span>🏅</span> Certifications
+                </h3>
+                <div class="certs-grid">
+                    <div class="cert-card" id="certCCNA1">
+                        <div class="cert-icon">🌐</div>
+                        <div class="cert-info">
+                            <span class="cert-name">CCNA: Introduction to Networks</span>
+                            <span class="cert-issuer">Cisco Networking Academy</span>
+                        </div>
+                    </div>
+                    <div class="cert-card" id="certCCNA2">
+                        <div class="cert-icon">🔀</div>
+                        <div class="cert-info">
+                            <span class="cert-name">CCNA: Switching, Routing &amp; Wireless Essentials</span>
+                            <span class="cert-issuer">Cisco Networking Academy</span>
+                        </div>
+                    </div>
+                    <div class="cert-card" id="certHardware">
+                        <div class="cert-icon">🖥️</div>
+                        <div class="cert-info">
+                            <span class="cert-name">Certificate in Computer Hardware &amp; Networking</span>
+                            <span class="cert-issuer">University of Kelaniya</span>
+                        </div>
+                    </div>
+                    <div class="cert-card" id="certMeta">
+                        <div class="cert-icon">📣</div>
+                        <div class="cert-info">
+                            <span class="cert-name">Social Media Advertising</span>
+                            <span class="cert-issuer">Meta · Coursera</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-subtitle">Got a project, opportunity, or just want to say hello?</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3 class="contact-heading">Get in touch</h3>
+                    <p class="contact-text">
+                        I'm always open to discussing new opportunities, interesting projects,
+                        or collaborations in networking, cybersecurity, or digital marketing.
+                        Drop me a message — I'll reply promptly!
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item" id="contactEmail">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:thilinajayaweera2000@gmail.com">thilinajayaweera2000@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" id="contactPhone">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <a href="tel:+94774005032">077 400 5032</a>
+                            </div>
+                        </div>
+                        <div class="contact-item" id="contactLocation">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span>Sri Lanka (Kelaniya / Kurunegala)</span>
+                            </div>
+                        </div>
+                        <div class="contact-item" id="contactAvail">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <span class="contact-label">Status</span>
+                                <span class="avail-badge">Open to Opportunities</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="http://www.linkedin.com/in/thilina-jayaweera-a68b0a239" target="_blank" rel="noopener"
+                            class="social-link" id="socialLI" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Thilina-jay" target="_blank" rel="noopener" class="social-link"
+                            id="socialGH" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                            </svg>
+                        </a>
+                        <a href="http://twitter.com/thili_jay" target="_blank" rel="noopener" class="social-link"
+                            id="socialTW" aria-label="Twitter / X">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/thili.jay" target="_blank" rel="noopener" class="social-link"
+                            id="socialIG" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/shehan.pere33" target="_blank" rel="noopener"
+                            class="social-link" id="socialFB" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="formName">Full Name</label>
+                                <input type="text" id="formName" name="name" placeholder="Your name" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="formEmail">Email Address</label>
+                                <input type="email" id="formEmail" name="email" placeholder="your@email.com" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="formSubject">Subject</label>
+                            <input type="text" id="formSubject" name="subject" placeholder="What's this about?" />
+                        </div>
+                        <div class="form-group">
+                            <label for="formMessage">Message</label>
+                            <textarea id="formMessage" name="message" rows="5"
+                                placeholder="Tell me about your project or opportunity..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="formSubmit">
+                            <span>Send Message</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                        <div class="form-success" id="formSuccess">
+                            ✅ Message sent! I'll get back to you soon.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="#home" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>TJ<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-tagline">Networking the future · One packet at a time. 🌐</p>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>© 2024 Thilina Jayaweera. Designed &amp; Built with ❤️ · University of Kelaniya, Sri Lanka</p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
